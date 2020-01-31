@@ -36,6 +36,7 @@ class _SucessState extends State<Sucess> {
               ),
               RaisedButton(
                 color: Colors.blue,
+                child: Text('OK', style: TextStyle(color: Colors.white),),
                 elevation: 10,
                 onPressed: () {
                   Navigator.push(

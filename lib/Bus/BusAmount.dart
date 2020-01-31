@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:halisi/PerDuration.dart';
+import 'package:halisi/Bus/BusDuration.dart';
 
-class PerAmount extends StatefulWidget {
+class BusAmount extends StatefulWidget {
   @override
-  _PerAmountState createState() => _PerAmountState();
+  _BusAmountState createState() => _BusAmountState();
 }
 
-class _PerAmountState extends State<PerAmount> {
+class _BusAmountState extends State<BusAmount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _PerAmountState extends State<PerAmount> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            homeTwo(Icons.ac_unit, "Personal Loans"),
+            homeTwo(Icons.ac_unit, "Business Loans"),
             Container(
               child: Text(
                   "import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';"),
@@ -77,7 +77,7 @@ class _PerAmountState extends State<PerAmount> {
                 Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) =>PerDuration()));
+                              builder: (BuildContext context) => BusDuration()));
               },
               color: Colors.blue,
               child: Text(

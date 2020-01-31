@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:halisi/SplashScreen.dart';
 
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -10,12 +9,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Halisi',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme:
+          ThemeData(primarySwatch: Colors.blue, accentColor: Colors.blueAccent),
       home: SplashPage(),
     );
   }
 }
-
-

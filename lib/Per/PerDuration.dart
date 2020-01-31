@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:halisi/BusDuration.dart';
+import 'package:halisi/Per/PerTerms.dart';
 
-class BusAmount extends StatefulWidget {
+class PerDuration extends StatefulWidget {
   @override
-  _BusAmountState createState() => _BusAmountState();
+  _PerDurationState createState() => _PerDurationState();
 }
 
-class _BusAmountState extends State<BusAmount> {
+class _PerDurationState extends State<PerDuration> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,17 +26,13 @@ class _BusAmountState extends State<BusAmount> {
           children: <Widget>[
             homeTwo(Icons.ac_unit, "Business Loans"),
             Container(
-              child: Text(
-                  "import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';"),
-            ),
-            Container(
               child: Card(
                 elevation: 10,
                 child: Column(
                   children: <Widget>[
                     Container(
                       padding: EdgeInsets.all(10),
-                      child: Text('Loan Amount'),
+                      child: Text('Duration'),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
@@ -61,7 +57,7 @@ class _BusAmountState extends State<BusAmount> {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(15.0))),
                             labelText: "Enter the Amount",
-                            hintText: 'Ksh',
+                            hintText: 'Weeks',
                             labelStyle: TextStyle(color: Colors.black)),
                       ),
                     ),
@@ -77,7 +73,7 @@ class _BusAmountState extends State<BusAmount> {
                 Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) => BusDuration()));
+                              builder: (BuildContext context) => PerTerms()));
               },
               color: Colors.blue,
               child: Text(

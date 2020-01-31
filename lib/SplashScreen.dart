@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:halisi/Home.dart';
+import 'package:halisi/Services/SignInPage.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -50,7 +50,7 @@ class _SplashPageState extends State<SplashPage> {
                    Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) => MyHomePage()));
+                              builder: (BuildContext context) => SignUp()));
                   },
                   child: Text(
                     "Get Started",

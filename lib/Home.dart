@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:halisi/BusAmount.dart';
-import 'package:halisi/PerAmount.dart';
+import 'package:halisi/Bus/BusAmount.dart';
+import 'package:halisi/Per/PerAmount.dart';
 
 class MyHomePage extends StatefulWidget {
   @override

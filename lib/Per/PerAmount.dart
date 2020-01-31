@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:halisi/PerTerms.dart';
+import 'package:halisi/Per/PerDuration.dart';
 
-class PerDuration extends StatefulWidget {
+class PerAmount extends StatefulWidget {
   @override
-  _PerDurationState createState() => _PerDurationState();
+  _PerAmountState createState() => _PerAmountState();
 }
 
-class _PerDurationState extends State<PerDuration> {
+class _PerAmountState extends State<PerAmount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,11 @@ class _PerDurationState extends State<PerDuration> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            homeTwo(Icons.ac_unit, "Business Loans"),
+            homeTwo(Icons.ac_unit, "Personal Loans"),
+            Container(
+              child: Text(
+                  "import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';"),
+            ),
             Container(
               child: Card(
                 elevation: 10,
@@ -32,7 +36,7 @@ class _PerDurationState extends State<PerDuration> {
                   children: <Widget>[
                     Container(
                       padding: EdgeInsets.all(10),
-                      child: Text('Duration'),
+                      child: Text('Loan Amount'),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
@@ -57,7 +61,7 @@ class _PerDurationState extends State<PerDuration> {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(15.0))),
                             labelText: "Enter the Amount",
-                            hintText: 'Weeks',
+                            hintText: 'Ksh',
                             labelStyle: TextStyle(color: Colors.black)),
                       ),
                     ),
@@ -73,7 +77,7 @@ class _PerDurationState extends State<PerDuration> {
                 Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) => PerTerms()));
+                              builder: (BuildContext context) =>PerDuration()));
               },
               color: Colors.blue,
               child: Text(

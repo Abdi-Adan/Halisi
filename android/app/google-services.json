@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "365052255463",
+    "firebase_url": "https://kitabu-microfinance.firebaseio.com",
+    "project_id": "kitabu-microfinance",
+    "storage_bucket": "kitabu-microfinance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365052255463:android:88e3026161023d22a0d642",
+        "android_client_info": {
+          "package_name": "africa.kitabu_africa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365052255463-ia6oje27b1r0f1ubsd5fal2gs89do28s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3UQw9_-EAIo89M6huXjX1_Qsqjp0piTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365052255463-ia6oje27b1r0f1ubsd5fal2gs89do28s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365052255463:android:e99c7e6513ea2855a0d642",
+        "android_client_info": {
+          "package_name": "com.example.halisi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365052255463-ia6oje27b1r0f1ubsd5fal2gs89do28s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3UQw9_-EAIo89M6huXjX1_Qsqjp0piTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365052255463-ia6oje27b1r0f1ubsd5fal2gs89do28s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

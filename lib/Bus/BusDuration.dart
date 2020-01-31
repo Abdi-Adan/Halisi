@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:halisi/BusTerms.dart';
+import 'package:halisi/Bus/BusTerms.dart';
 
 class BusDuration extends StatefulWidget {
   @override
