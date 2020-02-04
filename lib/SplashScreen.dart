@@ -30,7 +30,11 @@ class _SplashPageState extends State<SplashPage> {
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
                   radius: 100,
-                  // child: Image.asset("assets/111.png"),
+                  child: Icon(
+                    Icons.account_balance_wallet,
+                    color: Colors.blue,
+                    size: 50,
+                  ),
                 ),
               ),
               Text(
@@ -47,10 +51,10 @@ class _SplashPageState extends State<SplashPage> {
                   color: Colors.cyan,
                   elevation: 7.0,
                   onPressed: () {
-                   Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) => SignUp()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => SignUp()));
                   },
                   child: Text(
                     "Get Started",
