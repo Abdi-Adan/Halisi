@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
       resizeToAvoidBottomPadding: true,
       appBar: new AppBar(
         backgroundColor: Colors.white,
-        elevation: 10.0,
+        elevation: 0,
         actions: <Widget>[
           new Padding(
             padding: const EdgeInsets.fromLTRB(0, 15, 20, 0),
@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              highlightColor: Colors.red,
+              highlightColor: Colors.cyan,
               shape: StadiumBorder(),
             ),
           ),

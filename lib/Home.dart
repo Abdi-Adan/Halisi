@@ -22,26 +22,24 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Colors.blue,
           centerTitle: true,
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(top: 10),
-                alignment: Alignment.center,
-                child: Text(
-                  'Our Services',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18),
-                ),
+        body: Column(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.only(top: 10),
+              alignment: Alignment.center,
+              child: Text(
+                'Our Services',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18),
               ),
-              homeOne('Loans', Icons.ac_unit, 'Business Loans', Icons.ac_unit,
-                  'Personal Loans', BusAmount(), PerAmount()),
-              homeTwo('Other Services', Icons.ac_unit,
-                  'Check Credit Listing (CRB)', Checkpage())
-            ],
-          ),
+            ),
+            homeOne('Loans', Icons.ac_unit, 'Business Loans', Icons.ac_unit,
+                'Personal Loans', BusAmount(), PerAmount()),
+            homeTwo('Other Services', Icons.ac_unit,
+                'Check Credit Listing (CRB)', Checkpage())
+          ],
         ));
   }
 
@@ -49,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       String des2, Widget router1, Widget router2) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-      height: 250,
+      height: 230,
       width: MediaQuery.of(context).size.width,
       child: Card(
         elevation: 10,
@@ -57,14 +55,17 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Container(
-              alignment: Alignment.center,
-              child: Text(
-                head,
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                alignment: Alignment.center,
+                child: Text(
+                  head,
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
             ),
             Row(
@@ -84,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: <Widget>[
                         Container(
                           width: 150,
-                          height: 150,
+                          height: 100,
                           padding: EdgeInsets.all(10),
                           child: Icon(
                             ic1,
@@ -92,15 +93,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.blue,
                           ),
                         ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 130,
-                          height: 50,
-                          child: Text(
-                            des1,
-                            style: TextStyle(color: Colors.black),
-                          ),
-                        )
+                        Text(
+                          des1,
+                          style: TextStyle(color: Colors.black),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
                       ],
                     ),
                   ),
@@ -119,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: <Widget>[
                         Container(
                           width: 150,
-                          height: 150,
+                          height: 100,
                           padding: EdgeInsets.all(10),
                           child: Icon(
                             ic2,
@@ -127,20 +126,21 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.blue,
                           ),
                         ),
-                        Container(
-                          width: 130,
-                          height: 50,
-                          padding: EdgeInsets.all(10),
-                          child: Text(
-                            des2,
-                            style: TextStyle(color: Colors.black),
-                          ),
+                        Text(
+                          des2,
+                          style: TextStyle(color: Colors.black),
+                        ),
+                        SizedBox(
+                          height: 10,
                         )
                       ],
                     ),
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 10,
             ),
           ],
         ),
@@ -196,15 +196,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
+                        alignment: Alignment.center,
                         width: 200,
                         height: 60,
                         padding: EdgeInsets.all(10),
                         child: Text(
                           des3,
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16),
+                          style: TextStyle(color: Colors.black, fontSize: 14),
                         ),
                       )
                     ],

@@ -30,7 +30,7 @@ class _SplashPageState extends State<SplashPage> {
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
                   radius: 100,
-                  child: Image.asset("assets/111.png"),
+                  // child: Image.asset("assets/111.png"),
                 ),
               ),
               Text(

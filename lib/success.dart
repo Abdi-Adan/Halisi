@@ -26,10 +26,17 @@ class _SucessState extends State<Sucess> {
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
           child: Column(
             children: <Widget>[
-              Card(
-                elevation: 10,
-                child: Text(
-                    "Your loan application was sucessful, we will get back to you when its approved"),
+              SizedBox(height: 40,),
+              Container(
+                width: double.infinity,
+                child: Card(
+                  elevation: 10,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Text(
+                        "Your loan application was sucessful, we will get back to you when its approved"),
+                  ),
+                ),
               ),
               SizedBox(
                 height: 40,

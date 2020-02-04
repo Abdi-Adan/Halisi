@@ -38,7 +38,7 @@ class _SignUpState extends State<SignUp> {
                   MaterialPageRoute(builder: (context) => LoginPage()),
                 );
               },
-              highlightColor: Colors.red,
+              highlightColor: Colors.cyan,
               shape: StadiumBorder(),
             ),
           ),
@@ -104,7 +104,7 @@ class _SignUpState extends State<SignUp> {
                   color: Colors.blue,
                   elevation: 15.0,
                   shape: StadiumBorder(),
-                  splashColor: Colors.redAccent,
+                  splashColor: Colors.cyan,
                   onPressed: () {
                     Navigator.push(
                         context,

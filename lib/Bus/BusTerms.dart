@@ -26,27 +26,24 @@ class _BusTermsState extends State<BusTerms> {
           children: <Widget>[
             homeTwo(Icons.ac_unit, "Business Loans"),
             Container(
-              child: Text(
-                  "Terms and Conditions"),
+              child: Text("Terms and Conditions"),
+            ),
+            SizedBox(
+              height: 15,
             ),
             Container(
+              alignment: Alignment.center,
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                   "import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';"),
             ),
+            SizedBox(
+              height: 10,
+            ),
             Container(
-              child: Row(
-                children: <Widget>[
-                  // Checkbox(
-                  //   autofocus: false,
-                  //   checkColor: Colors.blue,
-                  //   activeColor: Colors.black,
-                  //   tristate: false,
-                  // ),
-                  SizedBox(width: 20,),
-                  Container(
-                    child: Text("I accept"),
-                  ),
-                ],
+              child: Container(
+                child: Text(
+                    "By agreeing You accept the terms of service and conditions of application"),
               ),
             ),
             SizedBox(
@@ -61,7 +58,7 @@ class _BusTermsState extends State<BusTerms> {
               },
               color: Colors.blue,
               child: Text(
-                'OK',
+                'I Agree',
                 style: TextStyle(color: Colors.white),
               ),
             ),

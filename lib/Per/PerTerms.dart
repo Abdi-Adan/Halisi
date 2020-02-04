@@ -13,61 +13,46 @@ class _PerTermsState extends State<PerTerms> {
       appBar: AppBar(
         title: Text(
           'Halisi',
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         elevation: 10,
-        backgroundColor: Colors.white,
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            homeTwo(Icons.ac_unit, "Personal Loans"),
-            Container(
-              child: Text("Terms and Conditions"),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget>[
+          homeTwo(Icons.ac_unit, "Personal Loans"),
+          Container(
+            child: Text("Terms and Conditions"),
+          ),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Text(
+                "import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';"),
+          ),
+          Container(
+            child: Container(
+              child: Text("By agreeing You accept the terms of service and conditions of application"),
             ),
-            Container(
-              child: Text(
-                  "import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';import 'package:flutter/material.dart';"),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          RaisedButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => Sucess()));
+            },
+            color: Colors.blue,
+            child: Text(
+              'I Agree',
+              style: TextStyle(color: Colors.white),
             ),
-            Container(
-              child: Row(
-                children: <Widget>[
-                  // Checkbox(
-                  //   autofocus: false,
-                  //   checkColor: Colors.blue,
-                  //   activeColor: Colors.black,
-                  //   tristate: false,
-                  // ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    child: Text("I accept"),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (BuildContext context) => Sucess()));
-              },
-              color: Colors.blue,
-              child: Text(
-                'OK',
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -99,7 +84,7 @@ Widget homeTwo(
                 child: Icon(
                   ic4,
                   size: 100,
-                  color: Colors.orange,
+                  color: Colors.blue,
                 ),
               ),
               Container(
