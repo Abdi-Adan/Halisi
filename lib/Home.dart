@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:halisi/Bus/BusAmount.dart';
+import 'package:halisi/CRB/check.dart';
 import 'package:halisi/Per/PerAmount.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -37,8 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               homeOne('Loans', Icons.ac_unit, 'Business Loans', Icons.ac_unit,
                   'Personal Loans', BusAmount(), PerAmount()),
-              homeTwo(
-                  'Other Services', Icons.ac_unit, 'Check Credit Listing (CRB)')
+              homeTwo('Other Services', Icons.ac_unit,
+                  'Check Credit Listing (CRB)', Checkpage())
             ],
           ),
         ));
@@ -151,8 +152,13 @@ class _MyHomePageState extends State<MyHomePage> {
     String headtwo,
     IconData ic3,
     String des3,
+    Widget router3,
   ) {
     return InkWell(
+      onTap: () {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (BuildContext context) => router3));
+      },
       splashColor: Colors.white,
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
