@@ -25,7 +25,7 @@ class _BusAmountState extends State<BusAmount> {
           SizedBox(
             height: 20,
           ),
-          homeTwo(Icons.ac_unit, "Business Loans"),
+          homeTwo('Business Amount', Icons.ac_unit, "Business Loans"),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
@@ -97,49 +97,107 @@ class _BusAmountState extends State<BusAmount> {
   }
 }
 
+// Widget homeTwo(
+//   IconData ic4,
+//   String des4,
+// ) {
+//   return Container(
+//     padding: EdgeInsets.symmetric(
+//       horizontal: 20,
+//     ),
+//     width: 600,
+//     height: 250,
+//     alignment: Alignment.center,
+//     child: Card(
+//       elevation: 10,
+//       child: Container(
+//         padding: EdgeInsets.all(10),
+//         child: Card(
+//           elevation: 5,
+//           child: Column(
+//             crossAxisAlignment: CrossAxisAlignment.center,
+//             mainAxisAlignment: MainAxisAlignment.spaceAround,
+//             children: <Widget>[
+//               Container(
+//                 width: 150,
+//                 height: 150,
+//                 padding: EdgeInsets.all(10),
+//                 child: Icon(
+//                   ic4,
+//                   size: 100,
+//                   color: Colors.orange,
+//                 ),
+//               ),
+//               Container(
+//                 width: 150,
+//                 height: 15,
+//                 padding: EdgeInsets.all(10),
+//                 child: Text(
+//                   des4,
+//                   style: TextStyle(color: Colors.black),
+//                 ),
+//               )
+//             ],
+//           ),
+//         ),
+//       ),
+//     ),
+//   );
 Widget homeTwo(
-  IconData ic4,
-  String des4,
+  String headtwo,
+  IconData ic3,
+  String des3,
 ) {
   return Container(
-    padding: EdgeInsets.symmetric(
-      horizontal: 20,
-    ),
-    width: 600,
+    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
     height: 250,
+    width: double.infinity,
     alignment: Alignment.center,
     child: Card(
       elevation: 10,
-      child: Container(
-        padding: EdgeInsets.all(10),
-        child: Card(
-          elevation: 5,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Container(
-                width: 150,
-                height: 150,
-                padding: EdgeInsets.all(10),
-                child: Icon(
-                  ic4,
-                  size: 100,
-                  color: Colors.orange,
-                ),
-              ),
-              Container(
-                width: 150,
-                height: 15,
-                padding: EdgeInsets.all(10),
-                child: Text(
-                  des4,
-                  style: TextStyle(color: Colors.black),
-                ),
-              )
-            ],
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.only(top: 10),
+            alignment: Alignment.center,
+            child: Text(headtwo),
           ),
-        ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Card(
+              elevation: 5,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Container(
+                    alignment: Alignment.center,
+                    width: 50,
+                    height: 60,
+                    padding: EdgeInsets.all(10),
+                    child: Icon(
+                      ic3,
+                      size: 50,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    width: 200,
+                    height: 60,
+                    padding: EdgeInsets.all(10),
+                    child: Text(
+                      des3,
+                      style: TextStyle(color: Colors.black, fontSize: 14),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     ),
   );

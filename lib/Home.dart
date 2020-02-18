@@ -3,12 +3,7 @@ import 'package:halisi/Bus/BusAmount.dart';
 import 'package:halisi/CRB/check.dart';
 import 'package:halisi/Per/PerAmount.dart';
 
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       height: 230,
-      width: MediaQuery.of(context).size.width,
+      width: double.infinity,
       child: Card(
         elevation: 10,
         child: Column(
@@ -215,4 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}
+
+
 }
